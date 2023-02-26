@@ -36,6 +36,7 @@ body{
     background: url(https://th.bing.com/th/id/R.124a40726a1472faa19ffa4b3416fe54?rik=gceOnYjfWAwbnA&riu=http%3a%2f%2fpapers.co%2fwallpaper%2fpapers.co-mc90-wallpaper-cloud-above-6-sky-fly-13-wallpaper.jpg&ehk=oXipRTHMEV0nkxvlI7wNL1m%2bWG2bvSdgS3IN0yAzwgo%3d&risl=&pid=ImgRaw&r=0);
     grid-area: nav;
     display: flex;
+    border-bottom-right-radius: 20px;
 
 }
 
@@ -70,11 +71,25 @@ body{
     width: 450px;
 }
 
+.navbar__content ul li {
+    transition: all 500ms ease;
+}
+
+.navbar__content ul li:hover {
+    transform: rotate(-15deg);
+}
+
 .navbar__content ul li a {
     color: black;
     font-weight: 300;
     text-decoration: none;
+    transition: all 500ms ease;
 }
+
+.navbar__content ul li:hover a {
+    font-weight: bold;
+}
+
 
 .main-content {
     grid-area: section;
